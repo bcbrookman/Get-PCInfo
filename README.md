@@ -11,8 +11,8 @@ Currently, it provides the following information:
 * Operating System Bit-level
 * System Serial Number
 
-##Examples
-###Local workstation with Format-List
+## Examples
+### Local workstation with Format-List
 ```
 PS C:\> Get-PCInfo | format-list 'Hostname','Model','Serial','RAM','OS-Bitness'
 
@@ -23,7 +23,7 @@ RAM        : 8GB
 OS-Bitness : 64-bit
 ```
 
-###Workstation list with Format-Table
+### Workstation list with Format-Table
 ```
 PS C:\> Get-PCInfo -list ~\pcinfo-list.csv | Format-Table *
 
@@ -35,7 +35,7 @@ deathstar           ---        ---                  ---        ---          --- 
 yavin4.example.com  Y4-SV5433  HP Proliant G7 RFF   HSOLO      Han Solo     32GB  64-bit      RFF9C0FE892
 ```
 
-###Workstation list with Export-Csv
+### Workstation list with Export-Csv
 ```
 PS C:\> Get-PCInfo -list ~\pcinfo-list.csv | Export-Csv ~\pcinfo-export.csv
 PS C:\>
